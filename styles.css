@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400&family=Oswald:wght@300;400;500;600;700&display=swap%27');
+
+/* css reset */
+html, body {
+    min-height: 100vh;
+    height: 100%s;
+    background-color: rgb(15, 15, 15);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* global styles*/
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'OsWald', 'sans serif';
+    font-weight: 700;
+    
+}
+
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+ 
+
+.navbar{
+    background: rgb(96,7,7);
+    background: linear-gradient(273deg, rgb(119, 5, 5) 0%, rgb(196, 8, 8) 100%);
+    min-height: 7vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding-inline: 1.5em;
+    padding-block: .25em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.logocontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    font-size: 2rem;
+}
+
+.navbarlinks{
+    list-style: none;
+
+
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 4em;
+     margin-right: 1em;
+
+}
+
+
+/* navbar linky s animací */
+.navbarlinks li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  
+}
+.navbarlinks li a::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease-out;
+}
+.navbarlinks li a:hover::after {
+    width: 100%;
+}
+
+
+.navbar img {
+    width: 64px;
+    height: 64px;
+}
+
+
+.titleimage{
+    background-image: url("/images/msi_logo.jpg");
+    background-position: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 60vh;
+
+}
+
+.article h2{
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.article{
+    max-width: 70%;
+    margin: auto;
+    color: white;
+    margin-top: 2em;
+    line-height: 1.5;
+
+}
